@@ -19,9 +19,9 @@ jobs:
     strategy:
       matrix:
         image:
-          - name: bentopdf
+          - name: owais
             file: Dockerfile
-          - name: bentopdf-nonroot
+          - name: owais-nonroot
             file: Dockerfile.nonroot
     steps:
       - name: Checkout code

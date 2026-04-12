@@ -38,7 +38,7 @@ public/sitemap.xml
 libreoffice-wasm-package
 
 # helm chart
-bentopdf-*.tgz
+owais-*.tgz
 
 # test 
 dist-test

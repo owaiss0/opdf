@@ -132,7 +132,7 @@ async function deserializeWorkflow(
   }
 }
 
-const TEMPLATES_KEY = 'bento-pdf-workflow-templates';
+const TEMPLATES_KEY = 'owaispdf-workflow-templates';
 
 interface StoredTemplates {
   [name: string]: SerializedWorkflow;

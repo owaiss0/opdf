@@ -1,4 +1,4 @@
-name = "bentopdf-cors-proxy"
+name = "owais-cors-proxy"
 main = "cors-proxy-worker.js"
 compatibility_date = "2024-01-01"
 compatibility_flags = [ "nodejs_compat" ]
@@ -39,9 +39,9 @@ id = "b88e030b308941118cd484e3fcb3ae49"
 
 # Optional: Custom domain routing
 # routes = [
-#   { pattern = "cors-proxy.bentopdf.com/*", zone_name = "bentopdf.com" }
+#   { pattern = "cors-proxy.owais.co/*", zone_name = "owais.co" }
 # ]
 
 # Optional: Environment variables (for non-secret config)
 # [vars]
-# ALLOWED_ORIGINS = "https://www.bentopdf.com,https://bentopdf.com"
+# ALLOWED_ORIGINS = "https://pdf.owais.co,https://owais.co"

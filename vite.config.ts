@@ -52,12 +52,6 @@ function loadPages(): Set<string> {
 
   const rootPages = [
     'index',
-    'about',
-    'contact',
-    'faq',
-    'privacy',
-    'terms',
-    'licensing',
     'tools',
     '404',
     'pdf-converter',
@@ -459,12 +453,6 @@ export default defineConfig(() => {
             process.env.SIMPLE_MODE === 'true'
               ? resolve(__dirname, 'simple-index.html')
               : resolve(__dirname, 'index.html'),
-          about: resolve(__dirname, 'about.html'),
-          contact: resolve(__dirname, 'contact.html'),
-          faq: resolve(__dirname, 'faq.html'),
-          privacy: resolve(__dirname, 'privacy.html'),
-          terms: resolve(__dirname, 'terms.html'),
-          licensing: resolve(__dirname, 'licensing.html'),
           tools: resolve(__dirname, 'tools.html'),
           '404': resolve(__dirname, '404.html'),
           // Category Hub Pages

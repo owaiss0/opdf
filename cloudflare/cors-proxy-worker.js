@@ -26,8 +26,6 @@ const ALLOWED_ORIGINS = [
   'https://www.owais.co',
   'https://owais.co',
   'https://pdf.owais.co',
-  'https://pdf.owais.co',
-  'https://owais.co',
 ];
 
 const SAFE_CONTENT_TYPES = [

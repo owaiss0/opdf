@@ -68,15 +68,6 @@ function loadPages(): Set<string> {
 
   const rootPages = [
     'index',
-    'about',
-    'contact',
-    'faq',
-    'privacy',
-    'terms',
-    'licensing',
-    'kura',
-    'hyper-compress',
-    'advertise',
     '404',
     'pdf-converter',
     'pdf-editor',
@@ -685,11 +676,7 @@ export default defineConfig(({ command }) => {
     (command === 'serve' || process.env.INCLUDE_DOCS === 'true')
       ? '/docs/'
       : 'https://www.bentopdf.com/docs';
-  const showAds =
-    command === 'serve' ||
-    ['bentopdf.com', 'www.bentopdf.com'].includes(
-      process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ''
-    );
+  const showAds = false;
 
   if (USE_CDN) {
     console.log('[Vite] Using CDN for WASM files (with local fallback)');
@@ -802,17 +789,6 @@ export default defineConfig(({ command }) => {
             process.env.SIMPLE_MODE === 'true'
               ? resolve(__dirname, 'simple-index.html')
               : resolve(__dirname, 'index.html'),
-          about: resolve(__dirname, 'about.html'),
-          contact: resolve(__dirname, 'contact.html'),
-          faq: resolve(__dirname, 'faq.html'),
-          privacy: resolve(__dirname, 'privacy.html'),
-          terms: resolve(__dirname, 'terms.html'),
-          licensing: resolve(__dirname, 'licensing.html'),
-          kura: resolve(__dirname, 'kura.html'),
-          'hyper-compress': resolve(__dirname, 'hyper-compress.html'),
-          ...(showAds
-            ? { advertise: resolve(__dirname, 'advertise.html') }
-            : {}),
           ...Object.fromEntries(
             fs
               .readdirSync(resolve(__dirname, 'blog'))

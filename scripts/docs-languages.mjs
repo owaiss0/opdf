@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export function listDocsSourcePages(docsDir, languageCodes) {
+  if (!fs.existsSync(docsDir)) return [];
   const codes = new Set(languageCodes);
   const pages = [];
   const walk = (dir, relative) => {
